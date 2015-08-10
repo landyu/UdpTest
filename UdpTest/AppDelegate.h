@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AsyncUdpSocket.h"
+#import "ViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    AsyncUdpSocket             *_udpSocket;
+    
+    UIButton *_sendButton;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *viewController;
+
+@property (nonatomic, retain) AsyncUdpSocket *udpSocket;
+
 
 
 @end

@@ -14,6 +14,10 @@
 		17FFA3261B26C30E008F80FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17FFA3251B26C30E008F80FD /* Images.xcassets */; };
 		17FFA3291B26C30E008F80FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FFA3271B26C30E008F80FD /* LaunchScreen.xib */; };
 		17FFA3351B26C30E008F80FD /* UdpTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FFA3341B26C30E008F80FD /* UdpTestTests.m */; };
+		17FFA3401B26C389008F80FD /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FFA33F1B26C389008F80FD /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		17FFA3421B26C3FE008F80FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA3411B26C3FE008F80FD /* UIKit.framework */; };
+		17FFA3441B26C413008F80FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA3431B26C413008F80FD /* Foundation.framework */; };
+		17FFA3461B26C421008F80FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FFA3451B26C421008F80FD /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		17FFA32E1B26C30E008F80FD /* UdpTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdpTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FFA3331B26C30E008F80FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17FFA3341B26C30E008F80FD /* UdpTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UdpTestTests.m; sourceTree = "<group>"; };
+		17FFA33E1B26C389008F80FD /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		17FFA33F1B26C389008F80FD /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		17FFA3411B26C3FE008F80FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17FFA3431B26C413008F80FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17FFA3451B26C421008F80FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FFA3461B26C421008F80FD /* CoreGraphics.framework in Frameworks */,
+				17FFA3441B26C413008F80FD /* Foundation.framework in Frameworks */,
+				17FFA3421B26C3FE008F80FD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,9 @@
 		17FFA30C1B26C30E008F80FD = {
 			isa = PBXGroup;
 			children = (
+				17FFA3451B26C421008F80FD /* CoreGraphics.framework */,
+				17FFA3431B26C413008F80FD /* Foundation.framework */,
+				17FFA3411B26C3FE008F80FD /* UIKit.framework */,
 				17FFA3171B26C30E008F80FD /* UdpTest */,
 				17FFA3311B26C30E008F80FD /* UdpTestTests */,
 				17FFA3161B26C30E008F80FD /* Products */,
@@ -81,6 +96,8 @@
 		17FFA3171B26C30E008F80FD /* UdpTest */ = {
 			isa = PBXGroup;
 			children = (
+				17FFA33E1B26C389008F80FD /* AsyncUdpSocket.h */,
+				17FFA33F1B26C389008F80FD /* AsyncUdpSocket.m */,
 				17FFA31C1B26C30E008F80FD /* AppDelegate.h */,
 				17FFA31D1B26C30E008F80FD /* AppDelegate.m */,
 				17FFA31F1B26C30E008F80FD /* ViewController.h */,
@@ -222,6 +239,7 @@
 				17FFA3211B26C30E008F80FD /* ViewController.m in Sources */,
 				17FFA31E1B26C30E008F80FD /* AppDelegate.m in Sources */,
 				17FFA31B1B26C30E008F80FD /* main.m in Sources */,
+				17FFA3401B26C389008F80FD /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
